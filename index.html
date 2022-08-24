@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Expense Tracker App</title>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" 
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">Expense Tracker App</h1>
+    <header>
+
+    <section class="content">
+        <h3 class="secondTitle">Add a new item: </h3>
+        <div class="form">
+            <form id="expForm">
+                <div class="formLine left">
+                    <span for="type">Choose a categary</span>
+                    <select id="type">
+                        <option value="chooseOne">Choose one...</option>
+                        <option value="movie">movie</option>
+                        <option value="fuel">fuel</option>
+                        <option value="electricity">electricity</option>
+                        <option value="popcorn">popcorn</option>
+                    </select>
+                </div>
+                <div class="formLine right">
+                    <span for="name">Choose description:</span>
+                    <input type="text" id="name">
+                </div>
+
+                
+                <div class="formLine right">
+                    <span for="amount">Choose expenditure</span>
+                    <input type="text" id="amount">
+                </div>
+                <button type="submit" class="buttonSave">Add a new expense</button>
+            </form>
+        </div>
+    </section>
+    <section class="content">
+        <table class="table">
+            <thead>
+                
+            </thead>
+            <tbody id="expenseTable">
+
+            </tbody>
+        </table>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
